@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3B38338D-E4A6-4B3D-94F1-508B393CED4D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Produkte_Verwaltung</RootNamespace>
+    <AssemblyName>Produkte_Verwaltung</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\Anmeldung.cs" />
+    <Compile Include="BLL\neues_Produkt.cs" />
+    <Compile Include="DAL\Datenbank.cs" />
+    <Compile Include="PL\Anmeldung_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Anmeldung_Form.Designer.cs">
+      <DependentUpon>Anmeldung_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\haupt_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\haupt_form.Designer.cs">
+      <DependentUpon>haupt_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\neues_Produkt_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\neues_Produkt_Form.Designer.cs">
+      <DependentUpon>neues_Produkt_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Produkte_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Produkte_Form.Designer.cs">
+      <DependentUpon>Produkte_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PL\Anmeldung_Form.resx">
+      <DependentUpon>Anmeldung_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\haupt_form.resx">
+      <DependentUpon>haupt_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\neues_Produkt_Form.resx">
+      <DependentUpon>neues_Produkt_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Produkte_Form.ku-Arab-IQ.resx">
+      <DependentUpon>Produkte_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Produkte_Form.resx">
+      <DependentUpon>Produkte_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel-1294426_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Delete_132746.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Apply_132742.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Create_132699.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no-image-icon-23483.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
