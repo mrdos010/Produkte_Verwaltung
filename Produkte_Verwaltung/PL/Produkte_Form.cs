@@ -13,11 +13,34 @@ namespace Produkte_Verwaltung.PL
 {
     public partial class Produkte_Form : Form
     {
+        private static Produkte_Form produktefrm;
+
+        static void haupt_closed(object sender, FormClosedEventArgs e)
+        {
+            produktefrm = null;
+
+        }
+
+        public static Produkte_Form gethauptform
+        {
+            get
+            {
+                if (produktefrm == null)
+                {
+                    produktefrm = new Produkte_Form();
+                    produktefrm.FormClosed += new FormClosedEventHandler(haupt_closed);
+                }
+                return produktefrm;
+            }
+        }
+
         BLL.neues_Produkt produkte = new BLL.neues_Produkt();
 
         public Produkte_Form()
         {
             InitializeComponent();
+            if (produktefrm == null)
+                produktefrm = this;
             this.dataGridView1.DataSource = produkte.get_alle_Produkte();
         }
 

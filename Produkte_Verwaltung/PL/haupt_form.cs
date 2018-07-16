@@ -12,6 +12,8 @@ namespace Produkte_Verwaltung.PL
 {
     public partial class haupt_form : Form
     {
+
+        // Form reaktivieren
         private static haupt_form haupt;
 
         static void haupt_closed(object sender, FormClosedEventArgs e)

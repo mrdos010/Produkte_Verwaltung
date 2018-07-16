@@ -85,12 +85,12 @@ namespace Produkte_Verwaltung.PL
                 prd.Produkt_aktualisieren(Convert.ToInt32(cmbsorte.SelectedValue), tbxpbeschreibung.Text, tbxprnr.Text,
                     Convert.ToInt32(tbxmenge.Text), tbxkosten.Text, byteimage);
                 MessageBox.Show("Produkt wurde aktualisiert", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                BLL.neues_Produkt produkte = new BLL.neues_Produkt();
-               
 
+
+                
             }
 
-
+            Produkte_Form.gethauptform.dataGridView1.DataSource = prd.get_alle_Produkte();
         }
 
         private void tbxprnr_Validated(object sender, EventArgs e)
