@@ -51,35 +51,51 @@ namespace Produkte_Verwaltung.PL
 
         private void btnadd_Click(object sender, EventArgs e)
         {
-            
-            
+            if (state == "add")
+            {
                 DataTable dt = new DataTable();
                 dt = prd.produktnummer_üperprüfene(tbxprnr.Text);
-                if (dt.Rows.Count > 0)
 
+                if (dt.Rows.Count > 0)
                 {
                     MessageBox.Show("Dieses Produkt ist schon vorhanden", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     tbxprnr.Focus();
                     tbxprnr.SelectionStart = 0;
                     tbxprnr.SelectionLength = tbxprnr.TextLength;
                 }
-            
+                else
+                {
+                    MemoryStream ms = new MemoryStream();
+                    pbild.Image.Save(ms, pbild.Image.RawFormat);
+                    byte[] byteimage = ms.ToArray();
 
-            else
+                    prd.produkt_hinzufügen(Convert.ToInt32(cmbsorte.SelectedValue), tbxpbeschreibung.Text, tbxprnr.Text,
+                        Convert.ToInt32(tbxmenge.Text), tbxkosten.Text, byteimage);
+                    MessageBox.Show("Produkt wurde hinzugefügt", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+
+            }
+            else if (state == "update")
             {
                 MemoryStream ms = new MemoryStream();
                 pbild.Image.Save(ms, pbild.Image.RawFormat);
                 byte[] byteimage = ms.ToArray();
 
-                prd.produkt_hinzufügen(Convert.ToInt32(cmbsorte.SelectedValue), tbxpbeschreibung.Text, tbxprnr.Text,
+                prd.Produkt_aktualisieren(Convert.ToInt32(cmbsorte.SelectedValue), tbxpbeschreibung.Text, tbxprnr.Text,
                     Convert.ToInt32(tbxmenge.Text), tbxkosten.Text, byteimage);
-                MessageBox.Show("Produkt wurde hinzugefügt", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-               
+                MessageBox.Show("Produkt wurde aktualisiert", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
+            //else {
+            //    MemoryStream ms = new MemoryStream();
+            //    pbild.Image.Save(ms, pbild.Image.RawFormat);
+            //    byte[] byteimage = ms.ToArray();
 
-           
-
-
+            //    prd.Produkt_aktualisieren(Convert.ToInt32(cmbsorte.SelectedValue), tbxpbeschreibung.Text, tbxprnr.Text,
+            //        Convert.ToInt32(tbxmenge.Text), tbxkosten.Text, byteimage);
+            //    MessageBox.Show("Produkt wurde aktualisiert", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //}
 
         }
 

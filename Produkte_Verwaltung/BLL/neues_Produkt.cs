@@ -117,5 +117,38 @@ namespace Produkte_Verwaltung.BLL
 
 
         }
+
+        public void Produkt_aktualisieren(int snr, string pname, string pnr,
+            int pmenge, string pkosten, byte[] pimage)
+
+        {
+            DAL.Datenbank DAL = new DAL.Datenbank();
+            DAL.oeffnen();
+
+            SqlParameter[] param = new SqlParameter[6];
+            param[0] = new SqlParameter("@PNR", SqlDbType.VarChar, 50);
+            param[0].Value = pnr;
+
+            param[1] = new SqlParameter("@PNAME", SqlDbType.VarChar, 50);
+            param[1].Value = pname;
+
+            param[2] = new SqlParameter("@PMENGE", SqlDbType.Int);
+            param[2].Value = pmenge;
+
+            param[3] = new SqlParameter("@PKOSTEN", SqlDbType.VarChar, 50);
+            param[3].Value = pkosten;
+
+            param[4] = new SqlParameter("@PIMAGE", SqlDbType.Binary);
+            param[4].Value = pimage;
+
+            param[5] = new SqlParameter("@SNR", SqlDbType.Int);
+            param[5].Value = snr;
+
+            DAL.sqlcommand("Produkt_aktualisieren", param);
+            DAL.ausmachen();
+        }
     }
 }
+
+
+
