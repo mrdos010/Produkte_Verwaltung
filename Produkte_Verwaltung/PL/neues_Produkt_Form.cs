@@ -90,6 +90,7 @@ namespace Produkte_Verwaltung.PL
                 
             }
 
+            
             Produkte_Form.gethauptform.dataGridView1.DataSource = prd.get_alle_Produkte();
         }
 
