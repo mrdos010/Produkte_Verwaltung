@@ -81,7 +81,7 @@
             this.btnabbrechen.Name = "btnabbrechen";
             this.btnabbrechen.Size = new System.Drawing.Size(91, 23);
             this.btnabbrechen.TabIndex = 6;
-            this.btnabbrechen.Text = "Abbrechen";
+            this.btnabbrechen.Text = "Schließen";
             this.btnabbrechen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnabbrechen.UseVisualStyleBackColor = true;
             this.btnabbrechen.Click += new System.EventHandler(this.btnabbrechen_Click);

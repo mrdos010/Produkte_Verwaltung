@@ -103,5 +103,19 @@ namespace Produkte_Verwaltung.BLL
             DAL.sqlcommand("Produkt_löschen", param);
             DAL.ausmachen();
         }
+
+        public DataTable get_image(string ID)
+        {
+            DAL.Datenbank DAL = new DAL.Datenbank();
+            DataTable Dt = new DataTable();
+            SqlParameter[] param = new SqlParameter[1];
+            param[0] = new SqlParameter("@ID", SqlDbType.VarChar, 50);
+            param[0].Value = ID;
+            Dt = DAL.selectData("get_image", param);
+            DAL.ausmachen();
+            return Dt;
+
+
+        }
     }
 }

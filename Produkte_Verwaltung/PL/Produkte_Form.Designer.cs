@@ -130,6 +130,7 @@
             resources.ApplyResources(this.bnbild, "bnbild");
             this.bnbild.Name = "bnbild";
             this.bnbild.UseVisualStyleBackColor = true;
+            this.bnbild.Click += new System.EventHandler(this.bnbild_Click);
             // 
             // Produkte_Form
             // 

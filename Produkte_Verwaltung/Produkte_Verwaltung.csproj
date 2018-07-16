@@ -61,6 +61,12 @@
     <Compile Include="PL\haupt_form.Designer.cs">
       <DependentUpon>haupt_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\Image_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Image_Form.Designer.cs">
+      <DependentUpon>Image_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\neues_Produkt_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\haupt_form.resx">
       <DependentUpon>haupt_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Image_Form.resx">
+      <DependentUpon>Image_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\neues_Produkt_Form.resx">
       <DependentUpon>neues_Produkt_Form.cs</DependentUpon>

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Produkte_Verwaltung.PL
 {
@@ -57,6 +58,20 @@ namespace Produkte_Verwaltung.PL
             frm.btnadd.Text = "Aktualisieren";
             frm.state = "update";
             frm.tbxprnr.ReadOnly = true;
+
+            byte[] image = (byte[])produkte.get_image(this.dataGridView1.CurrentRow.Cells[0].Value.ToString()).Rows[0][0];
+            MemoryStream ms = new MemoryStream(image);
+            frm.pbild.Image = Image.FromStream(ms);
+
+            frm.ShowDialog();
+        }
+
+        private void bnbild_Click(object sender, EventArgs e)
+        {
+            Image_Form frm = new Image_Form();
+            byte[] image = (byte[])produkte.get_image(this.dataGridView1.CurrentRow.Cells[0].Value.ToString()).Rows[0][0];
+            MemoryStream ms = new MemoryStream(image);
+            frm.pictureBox1.Image = Image.FromStream(ms);
             frm.ShowDialog();
         }
     }
