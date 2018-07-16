@@ -74,5 +74,10 @@ namespace Produkte_Verwaltung.PL
             frm.pictureBox1.Image = Image.FromStream(ms);
             frm.ShowDialog();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

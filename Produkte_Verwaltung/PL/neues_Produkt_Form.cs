@@ -85,17 +85,13 @@ namespace Produkte_Verwaltung.PL
                 prd.Produkt_aktualisieren(Convert.ToInt32(cmbsorte.SelectedValue), tbxpbeschreibung.Text, tbxprnr.Text,
                     Convert.ToInt32(tbxmenge.Text), tbxkosten.Text, byteimage);
                 MessageBox.Show("Produkt wurde aktualisiert", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                BLL.neues_Produkt produkte = new BLL.neues_Produkt();
+                //Produkte_Form frm = new Produkte_Form();
+                //frm.dataGridView1.DataSource = produkte.get_alle_Produkte();
+
 
             }
-            //else {
-            //    MemoryStream ms = new MemoryStream();
-            //    pbild.Image.Save(ms, pbild.Image.RawFormat);
-            //    byte[] byteimage = ms.ToArray();
 
-            //    prd.Produkt_aktualisieren(Convert.ToInt32(cmbsorte.SelectedValue), tbxpbeschreibung.Text, tbxprnr.Text,
-            //        Convert.ToInt32(tbxmenge.Text), tbxkosten.Text, byteimage);
-            //    MessageBox.Show("Produkt wurde aktualisiert", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //}
 
         }
 

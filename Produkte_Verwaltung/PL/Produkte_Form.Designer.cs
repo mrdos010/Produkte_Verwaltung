@@ -72,6 +72,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // groupBox2
             // 
@@ -156,7 +157,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbxsuchen;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnexport;
         private System.Windows.Forms.Button btnalleausdrucken;
@@ -165,5 +165,6 @@
         private System.Windows.Forms.Button btnbearbeiten;
         private System.Windows.Forms.Button btnlöschen;
         private System.Windows.Forms.Button btnneuesprodukt;
+        public System.Windows.Forms.DataGridView dataGridView1;
     }
 }
