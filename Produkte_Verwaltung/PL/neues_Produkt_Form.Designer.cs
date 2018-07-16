@@ -77,7 +77,7 @@
             // 
             this.btnabbrechen.Image = global::Produkte_Verwaltung.Properties.Resources.if_Delete_132746;
             this.btnabbrechen.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnabbrechen.Location = new System.Drawing.Point(112, 396);
+            this.btnabbrechen.Location = new System.Drawing.Point(119, 396);
             this.btnabbrechen.Name = "btnabbrechen";
             this.btnabbrechen.Size = new System.Drawing.Size(91, 23);
             this.btnabbrechen.TabIndex = 6;
@@ -92,7 +92,7 @@
             this.btnadd.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnadd.Location = new System.Drawing.Point(10, 396);
             this.btnadd.Name = "btnadd";
-            this.btnadd.Size = new System.Drawing.Size(93, 23);
+            this.btnadd.Size = new System.Drawing.Size(103, 23);
             this.btnadd.TabIndex = 5;
             this.btnadd.Text = "Hinzufügen";
             this.btnadd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -103,7 +103,7 @@
             // 
             this.btnbild.Image = global::Produkte_Verwaltung.Properties.Resources.if_Create_132699;
             this.btnbild.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnbild.Location = new System.Drawing.Point(228, 380);
+            this.btnbild.Location = new System.Drawing.Point(233, 380);
             this.btnbild.Name = "btnbild";
             this.btnbild.Size = new System.Drawing.Size(117, 23);
             this.btnbild.TabIndex = 4;
@@ -236,20 +236,20 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox tbxpbeschreibung;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox tbxprnr;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cmbsorte;
-        private System.Windows.Forms.TextBox tbxkosten;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox tbxmenge;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pbild;
-        private System.Windows.Forms.Button btnbild;
         private System.Windows.Forms.Button btnabbrechen;
-        private System.Windows.Forms.Button btnadd;
+        public System.Windows.Forms.TextBox tbxpbeschreibung;
+        public System.Windows.Forms.TextBox tbxprnr;
+        public System.Windows.Forms.ComboBox cmbsorte;
+        public System.Windows.Forms.TextBox tbxkosten;
+        public System.Windows.Forms.TextBox tbxmenge;
+        public System.Windows.Forms.PictureBox pbild;
+        public System.Windows.Forms.Button btnbild;
+        public System.Windows.Forms.Button btnadd;
     }
 }

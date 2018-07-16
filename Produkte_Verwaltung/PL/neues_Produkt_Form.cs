@@ -13,6 +13,7 @@ namespace Produkte_Verwaltung.PL
 {
     public partial class neues_Produkt_Form : Form
     {
+        public string state = "add";
         BLL.neues_Produkt prd = new BLL.neues_Produkt();
 
 
@@ -50,16 +51,20 @@ namespace Produkte_Verwaltung.PL
 
         private void btnadd_Click(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable();
-            dt = prd.produktnummer_üperprüfene(tbxprnr.Text);
-            if (dt.Rows.Count > 0)
+            
+            
+                DataTable dt = new DataTable();
+                dt = prd.produktnummer_üperprüfene(tbxprnr.Text);
+                if (dt.Rows.Count > 0)
 
-            {
-                MessageBox.Show("Dieses Produkt ist schon vorhanden", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                tbxprnr.Focus();
-                tbxprnr.SelectionStart = 0;
-                tbxprnr.SelectionLength = tbxprnr.TextLength;
-            }
+                {
+                    MessageBox.Show("Dieses Produkt ist schon vorhanden", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    tbxprnr.Focus();
+                    tbxprnr.SelectionStart = 0;
+                    tbxprnr.SelectionLength = tbxprnr.TextLength;
+                }
+            
+
             else
             {
                 MemoryStream ms = new MemoryStream();
@@ -80,15 +85,20 @@ namespace Produkte_Verwaltung.PL
 
         private void tbxprnr_Validated(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable();
-            dt = prd.produktnummer_üperprüfene(tbxprnr.Text);
-            if (dt.Rows.Count > 0)
-
+            if (state == "add")
             {
-                MessageBox.Show("Dieses Produkt ist schon vorhanden", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                tbxprnr.Focus();
-                tbxprnr.SelectionStart = 0;
-                tbxprnr.SelectionLength = tbxprnr.TextLength;
+
+                DataTable dt = new DataTable();
+                dt = prd.produktnummer_üperprüfene(tbxprnr.Text);
+                if (dt.Rows.Count > 0)
+
+                {
+                    MessageBox.Show("Dieses Produkt ist schon vorhanden", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    tbxprnr.Focus();
+                    tbxprnr.SelectionStart = 0;
+                    tbxprnr.SelectionLength = tbxprnr.TextLength;
+                }
+
             }
         }
 

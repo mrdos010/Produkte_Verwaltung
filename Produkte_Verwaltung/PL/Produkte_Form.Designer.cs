@@ -35,12 +35,12 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnexport = new System.Windows.Forms.Button();
+            this.btnneuesprodukt = new System.Windows.Forms.Button();
             this.btnalleausdrucken = new System.Windows.Forms.Button();
+            this.btnlöschen = new System.Windows.Forms.Button();
+            this.btnbearbeiten = new System.Windows.Forms.Button();
             this.btnausdrucken = new System.Windows.Forms.Button();
             this.bnbild = new System.Windows.Forms.Button();
-            this.btnbearbeiten = new System.Windows.Forms.Button();
-            this.btnlöschen = new System.Windows.Forms.Button();
-            this.btnneuesprodukt = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -59,30 +59,30 @@
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.dataGridView1);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
             // dataGridView1
             // 
-            resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             // 
             // groupBox2
             // 
-            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.btnexport);
+            this.groupBox2.Controls.Add(this.btnneuesprodukt);
             this.groupBox2.Controls.Add(this.btnalleausdrucken);
+            this.groupBox2.Controls.Add(this.btnlöschen);
+            this.groupBox2.Controls.Add(this.btnbearbeiten);
             this.groupBox2.Controls.Add(this.btnausdrucken);
             this.groupBox2.Controls.Add(this.bnbild);
-            this.groupBox2.Controls.Add(this.btnbearbeiten);
-            this.groupBox2.Controls.Add(this.btnlöschen);
-            this.groupBox2.Controls.Add(this.btnneuesprodukt);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
@@ -92,11 +92,32 @@
             this.btnexport.Name = "btnexport";
             this.btnexport.UseVisualStyleBackColor = true;
             // 
+            // btnneuesprodukt
+            // 
+            resources.ApplyResources(this.btnneuesprodukt, "btnneuesprodukt");
+            this.btnneuesprodukt.Name = "btnneuesprodukt";
+            this.btnneuesprodukt.UseVisualStyleBackColor = true;
+            this.btnneuesprodukt.Click += new System.EventHandler(this.btnneuesprodukt_Click);
+            // 
             // btnalleausdrucken
             // 
             resources.ApplyResources(this.btnalleausdrucken, "btnalleausdrucken");
             this.btnalleausdrucken.Name = "btnalleausdrucken";
             this.btnalleausdrucken.UseVisualStyleBackColor = true;
+            // 
+            // btnlöschen
+            // 
+            resources.ApplyResources(this.btnlöschen, "btnlöschen");
+            this.btnlöschen.Name = "btnlöschen";
+            this.btnlöschen.UseVisualStyleBackColor = true;
+            this.btnlöschen.Click += new System.EventHandler(this.btnlöschen_Click);
+            // 
+            // btnbearbeiten
+            // 
+            resources.ApplyResources(this.btnbearbeiten, "btnbearbeiten");
+            this.btnbearbeiten.Name = "btnbearbeiten";
+            this.btnbearbeiten.UseVisualStyleBackColor = true;
+            this.btnbearbeiten.Click += new System.EventHandler(this.btnbearbeiten_Click);
             // 
             // btnausdrucken
             // 
@@ -109,26 +130,6 @@
             resources.ApplyResources(this.bnbild, "bnbild");
             this.bnbild.Name = "bnbild";
             this.bnbild.UseVisualStyleBackColor = true;
-            // 
-            // btnbearbeiten
-            // 
-            resources.ApplyResources(this.btnbearbeiten, "btnbearbeiten");
-            this.btnbearbeiten.Name = "btnbearbeiten";
-            this.btnbearbeiten.UseVisualStyleBackColor = true;
-            // 
-            // btnlöschen
-            // 
-            resources.ApplyResources(this.btnlöschen, "btnlöschen");
-            this.btnlöschen.Name = "btnlöschen";
-            this.btnlöschen.UseVisualStyleBackColor = true;
-            this.btnlöschen.Click += new System.EventHandler(this.btnlöschen_Click);
-            // 
-            // btnneuesprodukt
-            // 
-            resources.ApplyResources(this.btnneuesprodukt, "btnneuesprodukt");
-            this.btnneuesprodukt.Name = "btnneuesprodukt";
-            this.btnneuesprodukt.UseVisualStyleBackColor = true;
-            this.btnneuesprodukt.Click += new System.EventHandler(this.btnneuesprodukt_Click);
             // 
             // Produkte_Form
             // 

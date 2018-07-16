@@ -16,7 +16,7 @@ namespace Produkte_Verwaltung
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PL.haupt_form());
+            Application.Run(new PL.Produkte_Form());
         }
     }
 }

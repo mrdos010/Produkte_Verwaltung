@@ -118,11 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnexport.Location" type="System.Drawing.Point, System.Drawing">
+    <value>450, 68</value>
+  </data>
   <data name="btnexport.Size" type="System.Drawing.Size, System.Drawing">
     <value>141, 23</value>
   </data>
   <data name="btnexport.Text" xml:space="preserve">
     <value>Zu Excel exportieren</value>
+  </data>
+  <data name="btnalleausdrucken.Location" type="System.Drawing.Point, System.Drawing">
+    <value>287, 68</value>
   </data>
   <data name="btnalleausdrucken.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 23</value>
@@ -130,11 +136,17 @@
   <data name="btnalleausdrucken.Text" xml:space="preserve">
     <value>Alle Produkte ausdrucken</value>
   </data>
+  <data name="btnausdrucken.Location" type="System.Drawing.Point, System.Drawing">
+    <value>604, 39</value>
+  </data>
   <data name="btnausdrucken.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 23</value>
   </data>
   <data name="btnausdrucken.Text" xml:space="preserve">
     <value>Produkt ausdrucken</value>
+  </data>
+  <data name="bnbild.Location" type="System.Drawing.Point, System.Drawing">
+    <value>494, 39</value>
   </data>
   <data name="bnbild.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 23</value>
@@ -142,17 +154,26 @@
   <data name="bnbild.Text" xml:space="preserve">
     <value>Podukt Bild</value>
   </data>
+  <data name="btnbearbeiten.Location" type="System.Drawing.Point, System.Drawing">
+    <value>364, 39</value>
+  </data>
   <data name="btnbearbeiten.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 23</value>
   </data>
   <data name="btnbearbeiten.Text" xml:space="preserve">
     <value>Produkt bearbeiten</value>
   </data>
+  <data name="btnlöschen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>245, 39</value>
+  </data>
   <data name="btnlöschen.Size" type="System.Drawing.Size, System.Drawing">
     <value>113, 23</value>
   </data>
   <data name="btnlöschen.Text" xml:space="preserve">
     <value>Produkt löschen</value>
+  </data>
+  <data name="btnneuesprodukt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 39</value>
   </data>
   <data name="btnneuesprodukt.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 23</value>

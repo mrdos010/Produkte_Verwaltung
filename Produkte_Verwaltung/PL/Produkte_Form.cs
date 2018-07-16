@@ -44,5 +44,20 @@ namespace Produkte_Verwaltung.PL
             }
             else { MessageBox.Show("Produkt wurde nicht gelöscht", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); }
         }
+
+        private void btnbearbeiten_Click(object sender, EventArgs e)
+        {
+            neues_Produkt_Form frm = new neues_Produkt_Form();
+            frm.tbxprnr.Text = this.dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            frm.tbxpbeschreibung.Text = this.dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            frm.tbxmenge.Text = this.dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            frm.tbxkosten.Text = this.dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            frm.cmbsorte.Text = this.dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            frm.Text = "Produkt beabeiten: " + this.dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            frm.btnadd.Text = "Aktualisieren";
+            frm.state = "update";
+            frm.tbxprnr.ReadOnly = true;
+            frm.ShowDialog();
+        }
     }
 }
