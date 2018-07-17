@@ -102,5 +102,16 @@ namespace Produkte_Verwaltung.PL
         {
 
         }
+
+        private void btnausdrucken_Click(object sender, EventArgs e)
+        {
+            BR.get_ein_Produkt bericht = new BR.get_ein_Produkt();
+            bericht.SetParameterValue("@ID", this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            BR.FRM_Bericht frm = new BR.FRM_Bericht();
+            frm.crystalReportViewer1.ReportSource = bericht;
+            frm.ShowDialog();
+            
+
+        }
     }
 }

@@ -125,6 +125,7 @@
             resources.ApplyResources(this.btnausdrucken, "btnausdrucken");
             this.btnausdrucken.Name = "btnausdrucken";
             this.btnausdrucken.UseVisualStyleBackColor = true;
+            this.btnausdrucken.Click += new System.EventHandler(this.btnausdrucken_Click);
             // 
             // bnbild
             // 
