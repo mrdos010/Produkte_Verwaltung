@@ -41,6 +41,7 @@
             this.btnbearbeiten = new System.Windows.Forms.Button();
             this.btnausdrucken = new System.Windows.Forms.Button();
             this.bnbild = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -76,6 +77,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.btnexport);
             this.groupBox2.Controls.Add(this.btnneuesprodukt);
             this.groupBox2.Controls.Add(this.btnalleausdrucken);
@@ -92,6 +94,7 @@
             resources.ApplyResources(this.btnexport, "btnexport");
             this.btnexport.Name = "btnexport";
             this.btnexport.UseVisualStyleBackColor = true;
+            this.btnexport.Click += new System.EventHandler(this.btnexport_Click);
             // 
             // btnneuesprodukt
             // 
@@ -105,6 +108,7 @@
             resources.ApplyResources(this.btnalleausdrucken, "btnalleausdrucken");
             this.btnalleausdrucken.Name = "btnalleausdrucken";
             this.btnalleausdrucken.UseVisualStyleBackColor = true;
+            this.btnalleausdrucken.Click += new System.EventHandler(this.btnalleausdrucken_Click);
             // 
             // btnlöschen
             // 
@@ -133,6 +137,13 @@
             this.bnbild.Name = "bnbild";
             this.bnbild.UseVisualStyleBackColor = true;
             this.bnbild.Click += new System.EventHandler(this.bnbild_Click);
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Produkte_Form
             // 
@@ -167,5 +178,6 @@
         private System.Windows.Forms.Button btnlöschen;
         private System.Windows.Forms.Button btnneuesprodukt;
         public System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button1;
     }
 }

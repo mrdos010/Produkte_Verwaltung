@@ -96,5 +96,11 @@ namespace Produkte_Verwaltung.PL
             Produkte_Form prd = new Produkte_Form();
             prd.ShowDialog();
         }
+
+        private void sorteVerwaltenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PL.Sorte_FRM frm = new Sorte_FRM ();
+            frm.ShowDialog();
+        }  
     }
 }

@@ -8,6 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using CrystalDecisions;
+using CrystalDecisions.CrystalReports;
+using CrystalDecisions.Shared;
+using CrystalDecisions.CrystalReports.Engine;
 
 namespace Produkte_Verwaltung.PL
 {
@@ -55,7 +59,7 @@ namespace Produkte_Verwaltung.PL
         {
             neues_Produkt_Form frm = new neues_Produkt_Form();
             frm.ShowDialog();
-          
+
         }
 
         private void btnlöschen_Click(object sender, EventArgs e)
@@ -110,8 +114,44 @@ namespace Produkte_Verwaltung.PL
             BR.FRM_Bericht frm = new BR.FRM_Bericht();
             frm.crystalReportViewer1.ReportSource = bericht;
             frm.ShowDialog();
-            
+        }
 
+        private void btnalleausdrucken_Click(object sender, EventArgs e)
+        {
+            BR.Bericht_alle_Produkte meinBericht = new BR.Bericht_alle_Produkte();
+            BR.FRM_Bericht frm = new BR.FRM_Bericht();
+            frm.crystalReportViewer1.ReportSource = meinBericht;
+            frm.ShowDialog();
+
+        }
+
+        private void btnexport_Click(object sender, EventArgs e)
+        {
+            BR.Bericht_alle_Produkte meinBR = new BR.Bericht_alle_Produkte();
+
+            // Export optinen
+            ExportOptions export = new ExportOptions();
+
+            // disk option 
+            DiskFileDestinationOptions disk = new DiskFileDestinationOptions();
+
+            //ExcelFormatOptions excel = new ExcelFormatOptions();
+            PdfFormatOptions pdf = new PdfFormatOptions();
+
+            // set den Speicherort
+            disk.DiskFileName = @"D:\ProduktList.pdf";
+            export = meinBR.ExportOptions;
+            export.ExportDestinationType = ExportDestinationType.DiskFile;
+            export.ExportFormatType = ExportFormatType.PortableDocFormat;
+            export.ExportFormatOptions = pdf;
+            export.ExportDestinationOptions = disk;
+            meinBR.Export();
+            MessageBox.Show("Excel Datei wurde exportiert","Info",MessageBoxButtons.OK,MessageBoxIcon.Information);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

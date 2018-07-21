@@ -55,6 +55,12 @@
   <ItemGroup>
     <Compile Include="BLL\Anmeldung.cs" />
     <Compile Include="BLL\neues_Produkt.cs" />
+    <Compile Include="BR\Bericht_alle_Produkte.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bericht_alle_Produkte.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="BR\FRM_Bericht.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,8 +104,18 @@
     <Compile Include="PL\Produkte_Form.Designer.cs">
       <DependentUpon>Produkte_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\Sorte-FRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Sorte-FRM.Designer.cs">
+      <DependentUpon>Sorte-FRM.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BR\Bericht_alle_Produkte.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Bericht_alle_Produkte.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="BR\FRM_Bericht.resx">
       <DependentUpon>FRM_Bericht.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\Produkte_Form.resx">
       <DependentUpon>Produkte_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Sorte-FRM.resx">
+      <DependentUpon>Sorte-FRM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

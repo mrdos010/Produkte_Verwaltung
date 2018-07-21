@@ -224,8 +224,36 @@
   <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>474, 51</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 23</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Schließen</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="btnexport.Location" type="System.Drawing.Point, System.Drawing">
-    <value>409, 51</value>
+    <value>337, 51</value>
   </data>
   <data name="btnexport.Size" type="System.Drawing.Size, System.Drawing">
     <value>131, 23</value>
@@ -246,7 +274,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;btnexport.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="btnneuesprodukt.Location" type="System.Drawing.Point, System.Drawing">
     <value>103, 22</value>
@@ -270,10 +298,10 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;btnneuesprodukt.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="btnalleausdrucken.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 51</value>
+    <value>174, 51</value>
   </data>
   <data name="btnalleausdrucken.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 23</value>
@@ -294,7 +322,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;btnalleausdrucken.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="btnlöschen.Location" type="System.Drawing.Point, System.Drawing">
     <value>204, 22</value>
@@ -318,7 +346,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;btnlöschen.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="btnbearbeiten.Location" type="System.Drawing.Point, System.Drawing">
     <value>323, 22</value>
@@ -342,7 +370,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;btnbearbeiten.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="btnausdrucken.Location" type="System.Drawing.Point, System.Drawing">
     <value>563, 22</value>
@@ -366,7 +394,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;btnausdrucken.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="bnbild.Location" type="System.Drawing.Point, System.Drawing">
     <value>453, 22</value>
@@ -390,7 +418,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;bnbild.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 392</value>
@@ -425,7 +453,6 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>821, 496</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>

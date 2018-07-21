@@ -38,7 +38,6 @@
             this.produktToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.produkteVerwaltenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.neueSorteHinzufügenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sorteVerwaltenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kundenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.neueKundeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -114,7 +113,6 @@
             this.produktToolStripMenuItem,
             this.produkteVerwaltenToolStripMenuItem,
             this.toolStripSeparator1,
-            this.neueSorteHinzufügenToolStripMenuItem,
             this.sorteVerwaltenToolStripMenuItem});
             this.produkteToolStripMenuItem.Name = "produkteToolStripMenuItem";
             this.produkteToolStripMenuItem.Size = new System.Drawing.Size(77, 23);
@@ -139,18 +137,12 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(196, 6);
             // 
-            // neueSorteHinzufügenToolStripMenuItem
-            // 
-            this.neueSorteHinzufügenToolStripMenuItem.Name = "neueSorteHinzufügenToolStripMenuItem";
-            this.neueSorteHinzufügenToolStripMenuItem.Size = new System.Drawing.Size(199, 24);
-            this.neueSorteHinzufügenToolStripMenuItem.Text = "neue Sorte";
-            this.neueSorteHinzufügenToolStripMenuItem.Click += new System.EventHandler(this.neueSorteHinzufügenToolStripMenuItem_Click);
-            // 
             // sorteVerwaltenToolStripMenuItem
             // 
             this.sorteVerwaltenToolStripMenuItem.Name = "sorteVerwaltenToolStripMenuItem";
             this.sorteVerwaltenToolStripMenuItem.Size = new System.Drawing.Size(199, 24);
             this.sorteVerwaltenToolStripMenuItem.Text = "Sorte verwalten";
+            this.sorteVerwaltenToolStripMenuItem.Click += new System.EventHandler(this.sorteVerwaltenToolStripMenuItem_Click);
             // 
             // kundenToolStripMenuItem
             // 
@@ -225,7 +217,7 @@
             // infoToolStripMenuItem
             // 
             this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
-            this.infoToolStripMenuItem.Size = new System.Drawing.Size(164, 24);
+            this.infoToolStripMenuItem.Size = new System.Drawing.Size(194, 24);
             this.infoToolStripMenuItem.Text = "Info";
             this.infoToolStripMenuItem.Click += new System.EventHandler(this.infoToolStripMenuItem_Click);
             // 
@@ -254,7 +246,6 @@
         private System.Windows.Forms.ToolStripMenuItem produktToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem produkteVerwaltenToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem neueSorteHinzufügenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sorteVerwaltenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem neueKundeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem kundenVerwaltenToolStripMenuItem;
