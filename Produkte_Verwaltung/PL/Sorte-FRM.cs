@@ -23,7 +23,7 @@ namespace Produkte_Verwaltung.PL
             InitializeComponent();
             da = new SqlDataAdapter("select SorteNr as 'Nummer', Sorte_Beschreibung as 'Beschreibung' from Sorte", sqlcon);
             da.Fill(dt);
-            datag.DataSource = dt;
+            datag.DataSource = dt;         
             tbxsorteNR.DataBindings.Add("text", dt, "Nummer");
             tbxbeschreibung.DataBindings.Add("text",dt, "Beschreibung");
         }
